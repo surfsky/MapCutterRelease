@@ -23,9 +23,11 @@ https://surfsky.github.io/2020/06/18/MapTiler
 
 （1）基础设置
 ![](./Doc/step_basic.png)
+
 （2）地图点位设置
 ![](./Doc/step_map.png)
 ![](./Doc/step_pos.png)
+
 （3）预览及截图
 ![](./Doc/step_preview.png)
 
