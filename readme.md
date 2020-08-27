@@ -5,6 +5,7 @@ Map tile images builder for baidu map, tencent map, google map, ...
 Add Custom Map Overlay to map.
 
 https://surfsky.github.io/2020/06/18/MapTiler
+
 https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 2. 支持的地图
