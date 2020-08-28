@@ -48,12 +48,20 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 6. Roadmap
 
-- 超大地图图片的处理，大于 20480*20480
 - LeafLet
 - OpenLayer
 
 # 5. History
 
+
+
+2.6.3
+
+    支持19-20级地图切图（分辨率超过 20480*20480），20级切图估计15分钟。
+    增加耗时统计
+    优化调试输出效果：增加网格，美化文本抗锯齿
+    修正位置设置窗口拖动时的 BUG
+    2020-08-28
 
 2.6.2
 
@@ -108,4 +116,8 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 - Bing 地图居中显示定位点，拖拽始终居中
 - Bing 自定义瓦片地图
+
+# 7. 注意
+
+- 此应用依赖 IE，若IE有问题，则地图窗口、预览窗口都无法正常显示。
 
