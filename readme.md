@@ -54,6 +54,10 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 # 5. History
 
 
+2.7.0
+
+    支持超大贴图（大于 20480*20480）
+    修改授权模式，可以对单个地图进行授权
 
 2.6.3
 
