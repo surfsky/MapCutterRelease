@@ -55,9 +55,11 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 # 5. History
 
 2.7.2
+
     修正切图中异常提示的“切图中遇到异常：参数无效”
 
 2.7.1
+
     支持 SVG 源图片
     切图文件名格式可自定义，默认为 {x}_{y}
     切图前可控是否清空输出目录
