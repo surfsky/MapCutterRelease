@@ -54,6 +54,12 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.8.0
+
+    - 支持切图级别 22
+    - 优化超大图处理逻辑，性能大大提高
+    - 优化 SVG 图处理逻辑
+
 2.7.2
 
     修正切图中异常提示的“切图中遇到异常：参数无效”
