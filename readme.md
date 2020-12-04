@@ -54,6 +54,12 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.8.1
+
+    - google 地图网页增加参数 minZoom，maxZoom
+    - 修正大图切图，背景色改为（255, 255, 255, 0）
+
+
 2.8.0
 
     - 支持切图级别 22
