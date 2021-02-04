@@ -54,6 +54,11 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.8.2
+    
+    - Update OpenFileDialog filter: png images, other images, svg files, other files
+    -
+
 2.8.1
 
     - google 地图网页增加参数 minZoom，maxZoom
