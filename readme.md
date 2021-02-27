@@ -56,20 +56,21 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 2.8.2
     
-    - Update OpenFileDialog filter: png images, other images, svg files, other files
-    -
+    优化图片选择对话框，拆分为: png images, other images, svg files, all files
+    修正超大图处理时偶尔出现的bug：
+    地图模式可切换到卫星模式，便于校对
 
 2.8.1
 
-    - google 地图网页增加参数 minZoom，maxZoom
-    - 修正大图切图，背景色改为（255, 255, 255, 0）
+    google 地图网页增加参数 minZoom，maxZoom
+    修正大图切图，背景色改为（255, 255, 255, 0）
 
 
 2.8.0
 
-    - 支持切图级别 22
-    - 优化超大图处理逻辑，性能大大提高
-    - 优化 SVG 图处理逻辑
+    支持切图级别 22
+    优化超大图处理逻辑，性能大大提高
+    优化 SVG 图处理逻辑
 
 2.7.2
 
