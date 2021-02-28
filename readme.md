@@ -56,9 +56,10 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 2.8.2
     
-    优化图片选择对话框，拆分为: png images, other images, svg files, all files
-    修正超大图处理时偶尔出现的bug：
-    地图模式可切换到卫星模式，便于校对
+    - 地图增加卫星模式，便于校对坐标。
+    - 修正超大图处理时偶尔出现的bug: 切图中遇到异常，unable to call embed linear. vector must have 1 or 3 elements.
+    - 优化图片选择对话框，拆分为: png images, other images, svg files, all files。
+
 
 2.8.1
 
