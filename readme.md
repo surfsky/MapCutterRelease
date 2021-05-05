@@ -54,6 +54,13 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.9.0
+
+    - 可取消
+    - 修正有些大图会出现竖线的BUG
+    - 2021-05-05
+
+
 2.8.2
     
     - 地图增加卫星模式，便于校对坐标。
