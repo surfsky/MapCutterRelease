@@ -54,9 +54,13 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.9.1
+   
+    - 修正大图切图时偶尔出现的BUG： unable to call extract_area extract_area: parameter width not set
+
 2.9.0
 
-    - 可取消
+    - 切图过程中可取消
     - 修正有些大图会出现竖线的BUG
     - 2021-05-05
 
