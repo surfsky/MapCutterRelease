@@ -54,6 +54,11 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+
+2.9.2
+   
+    - 输出地图页面时，显示当前放缩级别和中心点坐标
+
 2.9.1
    
     - 修正大图切图时偶尔出现的BUG： unable to call extract_area extract_area: parameter width not set
