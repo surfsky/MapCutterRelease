@@ -54,6 +54,15 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.9.4
+   
+    - 坐标支持中文字符，不报错
+    - 左上角右下角坐标设置反了，会提示不报错。
+
+2.9.3
+
+    - 美化高德地图位置、放缩级别标签
+    - 修正小尺寸图退出故障
 
 2.9.2
    
