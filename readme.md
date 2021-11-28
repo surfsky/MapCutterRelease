@@ -1,4 +1,4 @@
-# 1. MapTiler
+# 1. MapCutter (MapTiler)
 
 地图叠加层瓦片图（金字塔图）创建工具，可用于制作自定义区域地图，如园区地图。支持百度地图、腾讯地图、高德地图等。
 Map tile images builder for baidu map, tencent map, google map, ...
@@ -20,6 +20,7 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 - [ ] MapBox map
 - [ ] LeafLet
 - [ ] OpenLayer
+- [ ] Supper map
 
 # 3. 操作步骤
 
@@ -53,6 +54,20 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 - MapBox
 
 # 5. History
+
+2.11.0
+
+    - 实现地图目录合并功能。该功能可合并多个地图切片目录，并自动拼接图片，可用于实现超大城市地图的绘制。步骤如下：
+    （1）把切好的分块目录（如城区a、城区b、城区c）放到一个主目录下（如城区）；
+    （2）点击主界面“合并图片目录”，选择第一步的主目录，点击“处理”按钮；
+    （3）等待处理结束，查看合并的目录，如: 城区_merge
+     该功能由大图版本提供。
+
+
+2.10.0
+     
+     - 简化地图坐标区域设置
+
 
 2.9.4
    
