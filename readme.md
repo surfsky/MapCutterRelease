@@ -55,6 +55,12 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+2.11.2
+
+     - 默认地图改为卫星地图
+     - 腾讯地图尝试修复
+
+
 2.11.0
 
     - 实现地图目录合并功能。该功能可合并多个地图切片目录，并自动拼接图片，可用于实现超大城市地图的绘制。步骤如下：
