@@ -58,7 +58,7 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 2.11.2
 
      - 默认地图改为卫星地图
-     - 腾讯地图尝试修复
+     - 腾讯地图尝试修复（客户电脑上还是不行）
 
 
 2.11.0
