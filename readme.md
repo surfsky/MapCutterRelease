@@ -55,6 +55,10 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+3.0.0
+
+     - 嵌入 chrome 浏览器内核，对各地图更适配，速度更快
+
 2.11.2
 
      - 默认地图改为卫星地图
