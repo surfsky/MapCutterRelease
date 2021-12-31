@@ -8,19 +8,15 @@ https://surfsky.github.io/2020/06/18/MapTiler
 
 https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
-# 2. 支持的地图
+# 2. 支持的地图及代码输出能力
 
-- [x] Baidu map
-- [x] Tencent map
-- [x] Gaode map
-- [x] Tiande map
-- [x] Bing map
-- [x] Google map
-- [ ] MapBar map
-- [ ] MapBox map
-- [ ] LeafLet
-- [ ] OpenLayer
-- [ ] Supper map
+    Baidu    : v2 
+    Tencent  : v2、leaflet
+    Gaode    : v1, v2, leaflet
+    TianDiTu : v3, v4, leaflet
+    Bing     : js, leaflet
+    Google   : js, leaflet
+
 
 # 3. 操作步骤
 
@@ -53,7 +49,32 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 - OpenLayer
 - MapBox
 
+
 # 5. History
+
+3.3.3
+    - 修正高清模式下超大图切图异常BUG
+
+3.3.2
+    - Gaode地图输出增加 Zoom 和 Center 显示
+
+3.3.x
+    - 支持 leaflet 输出
+
+3.2.x
+    - 支持 高清地图切片输出（512*512)
+    - 支持 /z/x/y.png 切图路径
+    - 支持多版本网页输出
+    - 优化预览图页面，可拖拽中间的点平移选区
+    - 修真超大图切图时的BUG：是如果是jpg图片，现在背景色也设置为透明色（原为白色）
+    - 地图目录合并，边缘图片自动拼接
+    - 实现项目管理（读写 *.mct 文件)
+
+
+
+3.0.2
+
+     - 用不同色彩图标展示起止 Marker
 
 3.0.0
 
