@@ -12,7 +12,7 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
     Baidu    : v2 
     Tencent  : v2、leaflet
-    Gaode    : v1, v2, leaflet
+    Gaode    : v1, v2, leaflet, maptalks
     TianDiTu : v3, v4, leaflet
     Bing     : js, leaflet
     Google   : js, leaflet
@@ -51,6 +51,10 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 
 # 5. History
+
+3.4.x
+    - 支持 maptalks 网页输出
+    - 增加应用配置页面，可存取各地图的key
 
 3.3.3
     - 修正高清模式下超大图切图异常BUG
