@@ -52,20 +52,45 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 5. History
 
+3.6.x
+
+    - 预览窗口统一不透明度控制: SetOpacity(), GetOpacity()
+    - 预览页面可按源图比例显示叠加图片
+    - 修正腾讯地图预览页面不显示矩形框的bug
+    - 腾讯地图支持 webgl 输出
+
+3.5.x
+
+    - 支持多版本网页输出，如js、webgl、leaflet、maptalks 等：
+
+        Baidu : v2
+        Tencent : v2、leaflet
+        Gaode : v1, v2, leaflet, maptalks
+        TianDiTu : v3, v4, leaflet, maptalks
+        Bing : js, leaflet
+        Google : js, leaflet， maptalks
+  - 支持自定义输出模版。
+  - 修正百度地图预览偏差
+
 3.4.x
+
     - 支持 maptalks 网页输出
     - 增加应用配置页面，可存取各地图的key
 
 3.3.3
+
     - 修正高清模式下超大图切图异常BUG
 
 3.3.2
+
     - Gaode地图输出增加 Zoom 和 Center 显示
 
 3.3.x
+
     - 支持 leaflet 输出
 
 3.2.x
+
     - 支持 高清地图切片输出（512*512)
     - 支持 /z/x/y.png 切图路径
     - 支持多版本网页输出
