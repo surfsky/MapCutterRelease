@@ -10,12 +10,12 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 2. 支持的地图及代码输出能力
 
-    Baidu    : v2 
-    Tencent  : v2、leaflet
-    Gaode    : v1, v2, leaflet, maptalks
-    TianDiTu : v3, v4, leaflet
-    Bing     : js, leaflet
-    Google   : js, leaflet
+    Baidu    : v2、v3
+    Tencent  : v2、webjs、leaflet
+    Gaode    : v1, v2, leaflet, maptalks、openlayers、cesium
+    TianDiTu : v3, v4, leaflet, maptalks、openlayers、cesium
+    Bing     : js, leaflet, maptalks、openlayers、cesium
+    Google   : js, leaflet, maptalks、openlayers、cesium
 
 
 # 3. 操作步骤
@@ -45,8 +45,6 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 # 6. Roadmap
 
-- LeafLet
-- OpenLayer
 - MapBox
 
 
@@ -58,6 +56,8 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
     - 预览页面可按源图比例显示叠加图片
     - 修正腾讯地图预览页面不显示矩形框的bug
     - 腾讯地图支持 webgl 输出
+    - 支持 openlayers 输出
+    - 支持 cesium 输出
 
 3.5.x
 
@@ -249,8 +249,3 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
 - Bing 地图居中显示定位点，拖拽始终居中
 - Bing 自定义瓦片地图
-
-# 7. 注意
-
-- 此应用依赖 IE，若IE有问题，则地图窗口、预览窗口都无法正常显示。
-
