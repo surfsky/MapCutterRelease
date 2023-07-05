@@ -25,6 +25,7 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 - 支持根据图片内置的经纬度数据自动定位（支持 geotiff、exif gps）。
 - 支持图片旋转预览及处理。
 - 支持多版本网页输出，如js、webgl、leaflet、maptalks、openlayers、cesium 等。
+
     Baidu : v2、v3、maptalks
     BaiduGL: gl, openlayers, cesium
     Tencent : v2、webgl、leaflet
@@ -33,6 +34,7 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
     Bing : js, leaflet、openlayers
     Google : js, leaflet， maptalks、openlayers 
     MapBox: gl, leaflet
+
 - 支持自定义输出模版。
 - 使用内置 Web 服务器，查看需要部署成网站的地图网页不报错。
 - 支持游戏地图开发，可设置图层的宽度高度，与游戏像素相匹配。
