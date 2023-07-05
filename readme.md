@@ -7,7 +7,7 @@ https://www.bilibili.com/video/BV11P411i7rL
 https://surfsky.github.io/2020/06/18/MapTiler
 https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
-# 功能简介
+# 2.功能简介
 
 - 支持地图：百度、腾讯、高德、天地图、必应、谷歌、MapBox。
 - 支持超大图片（分辨率大于20480*20480），支持几十G的大图片。
