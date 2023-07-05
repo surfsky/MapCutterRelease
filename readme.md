@@ -1,21 +1,45 @@
-# 1. MapCutter (MapTiler)
+# 1. MapCutter
 
-地图叠加层瓦片图（金字塔图）创建工具，可用于制作自定义区域地图，如园区地图。支持百度地图、腾讯地图、高德地图等。
-Map tile images builder for baidu map, tencent map, google map, ...
-Add Custom Map Overlay to map.
+MapCutter 是制作覆盖图/瓦片图/金字塔图/游戏地图/切图切片的工具，它支持百度、腾讯、高德、天地图、谷歌、必应地图、MapBox等地图服务，是市面上最易用的同类软件，并支持js、webgl、leaflet、maptalks、openlayers、cesium 等地图网页输出，无偏移。可用于景区地图切图、遥感地图切图、游戏地图切图、虚拟城市地图、省市范围地图拼接等地图应用开发。
 
+https://blog.csdn.net/surfsky/article/details/106951716
+https://www.bilibili.com/video/BV11P411i7rL
 https://surfsky.github.io/2020/06/18/MapTiler
-
 https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 
-# 2. 支持的地图及代码输出能力
+# 功能简介
 
-    Baidu    : v2、v3
-    Tencent  : v2、webjs、leaflet
-    Gaode    : v1, v2, leaflet, maptalks、openlayers、cesium
+- 支持地图：百度、腾讯、高德、天地图、必应、谷歌、MapBox。
+- 支持超大图片（分辨率大于20480*20480），支持几十G的大图片。
+- 支持标准（256*256）及高清地图切片输出（512*512)，适合手机及视网膜屏查看。
+- 支持快速辅助校准地图位置，可用直观预览方式供用户快速精确定位地图。
+- 支持输入图片格式：jpg, png, tiff, gif
+- 支持输入矢量图片格式 svg 。
+- 支持输出图片格式 ：png、tif、jpg，并可设置输出图片的质量。
+- 支持10-22级地图切图。一般web用10-18级，mobile用10-19级，google支持22级。
+- 支持最新版本检测及下载、终身免费升级。
+- 支持自定义图片路径，如/z/x_y.png  或 /z/x/y.png。
+- 支持地图拼接，可用该功能生成省、市范围的大规模地图。
+- 支持超大地图目录无缝拼接功能。
+- 支持配置文件读写。
+- 支持根据图片内置的经纬度数据自动定位（支持 geotiff、exif gps）。
+- 支持图片旋转预览及处理。
+- 支持多版本网页输出，如js、webgl、leaflet、maptalks、openlayers、cesium 等。
+    Baidu : v2、v3、maptalks
+    BaiduGL: gl, openlayers, cesium
+    Tencent : v2、webgl、leaflet
+    Gaode : v1, v2, leaflet, maptalks、openlayers、cesium
     TianDiTu : v3, v4, leaflet, maptalks、openlayers、cesium
-    Bing     : js, leaflet, maptalks、openlayers、cesium
-    Google   : js, leaflet, maptalks、openlayers、cesium
+    Bing : js, leaflet、openlayers
+    Google : js, leaflet， maptalks、openlayers 
+    MapBox: gl, leaflet
+- 支持自定义输出模版。
+- 使用内置 Web 服务器，查看需要部署成网站的地图网页不报错。
+- 支持游戏地图开发，可设置图层的宽度高度，与游戏像素相匹配。
+- 使用内置 Web 服务器及谷歌内核浏览器，查看地图网页通用、稳定、快速。
+- 提供小型集成网页开发环境，可直接对网页进行读写、调试、展示。
+
+如果跑不起来，请运行安装一下安装包里面的VC再发布程序 VC_redist.x64.exe
 
 
 # 3. 操作步骤
@@ -43,209 +67,4 @@ https://api.github.com/repos/surfsky/MapTilerRelease/releases/latest
 ![](./Doc/map_google.png)
 
 
-# 6. Roadmap
 
-- MapBox
-
-
-# 5. History
-
-3.6.x
-
-    - 预览窗口统一不透明度控制: SetOpacity(), GetOpacity()
-    - 预览页面可按源图比例显示叠加图片
-    - 修正腾讯地图预览页面不显示矩形框的bug
-    - 腾讯地图支持 webgl 输出
-    - 支持 openlayers 输出
-    - 支持 cesium 输出
-
-3.5.x
-
-    - 支持多版本网页输出，如js、webgl、leaflet、maptalks 等：
-
-        Baidu : v2
-        Tencent : v2、leaflet
-        Gaode : v1, v2, leaflet, maptalks
-        TianDiTu : v3, v4, leaflet, maptalks
-        Bing : js, leaflet
-        Google : js, leaflet， maptalks
-  - 支持自定义输出模版。
-  - 修正百度地图预览偏差
-
-3.4.x
-
-    - 支持 maptalks 网页输出
-    - 增加应用配置页面，可存取各地图的key
-
-3.3.3
-
-    - 修正高清模式下超大图切图异常BUG
-
-3.3.2
-
-    - Gaode地图输出增加 Zoom 和 Center 显示
-
-3.3.x
-
-    - 支持 leaflet 输出
-
-3.2.x
-
-    - 支持 高清地图切片输出（512*512)
-    - 支持 /z/x/y.png 切图路径
-    - 支持多版本网页输出
-    - 优化预览图页面，可拖拽中间的点平移选区
-    - 修真超大图切图时的BUG：是如果是jpg图片，现在背景色也设置为透明色（原为白色）
-    - 地图目录合并，边缘图片自动拼接
-    - 实现项目管理（读写 *.mct 文件)
-
-
-
-3.0.2
-
-     - 用不同色彩图标展示起止 Marker
-
-3.0.0
-
-     - 嵌入 chrome 浏览器内核，对各地图更适配，速度更快
-
-2.11.2
-
-     - 默认地图改为卫星地图
-     - 腾讯地图尝试修复（客户电脑上还是不行）
-
-
-2.11.0
-
-    - 实现地图目录合并功能。该功能可合并多个地图切片目录，并自动拼接图片，可用于实现超大城市地图的绘制。步骤如下：
-    （1）把切好的分块目录（如城区a、城区b、城区c）放到一个主目录下（如城区）；
-    （2）点击主界面“合并图片目录”，选择第一步的主目录，点击“处理”按钮；
-    （3）等待处理结束，查看合并的目录，如: 城区_merge
-     该功能由大图版本提供。
-
-
-2.10.0
-     
-     - 简化地图坐标区域设置
-
-
-2.9.4
-   
-    - 坐标支持中文字符，不报错
-    - 左上角右下角坐标设置反了，会提示不报错。
-
-2.9.3
-
-    - 美化高德地图位置、放缩级别标签
-    - 修正小尺寸图退出故障
-
-2.9.2
-   
-    - 输出地图页面时，显示当前放缩级别和中心点坐标
-
-2.9.1
-   
-    - 修正大图切图时偶尔出现的BUG： unable to call extract_area extract_area: parameter width not set
-
-2.9.0
-
-    - 切图过程中可取消
-    - 修正有些大图会出现竖线的BUG
-    - 2021-05-05
-
-
-2.8.2
-    
-    - 地图增加卫星模式，便于校对坐标。
-    - 修正超大图处理时偶尔出现的bug: 切图中遇到异常，unable to call embed linear. vector must have 1 or 3 elements.
-    - 优化图片选择对话框，拆分为: png images, other images, svg files, all files。
-
-
-2.8.1
-
-    google 地图网页增加参数 minZoom，maxZoom
-    修正大图切图，背景色改为（255, 255, 255, 0）
-
-
-2.8.0
-
-    支持切图级别 22
-    优化超大图处理逻辑，性能大大提高
-    优化 SVG 图处理逻辑
-
-2.7.2
-
-    修正切图中异常提示的“切图中遇到异常：参数无效”
-
-2.7.1
-
-    支持 SVG 源图片
-    切图文件名格式可自定义，默认为 {x}_{y}
-    切图前可控是否清空输出目录
-
-2.7.0
-
-    支持超大贴图（大于 20480*20480）
-    修改授权模式，可以对单个地图进行授权
-
-2.6.3
-
-    支持19-20级地图切图（分辨率超过 20480*20480），20级切图估计15分钟。
-    增加耗时统计
-    优化调试输出效果：增加网格，美化文本抗锯齿
-    修正位置设置窗口拖动时的 BUG
-    2020-08-28
-
-2.6.2
-
-    完善异常捕捉，避免程序崩溃
-    显示对应级别的切图信息：图片大小、切图数
-    2020-08-12
-
-2.6.1
-
-    支持版本检测
-    2020-07-02
-
-2.6.0
-
-    支持 Google Map（需先解决网络问题）
-    优化百度地图位置设置窗口，增加label辅助显示
-    优化地图类别展示，文本改为中文，增大行距
-    2020-07-02
-
-2.5
-
-    支持 Bing Map
-    2020-06-30
-
-2.4.2
-
-    优化预览窗口：显示半透明图片(支持百度、腾讯、高德)
-    修正地图定位窗口：查找结束后显示中心红点
-    2020-06-18
-
-2.4.1
-
-    支持天地图
-    2020-06-10
-
-2.4.0
-    支持高德地图
-    2020-06-08
-
-2.4.0
-
-    支持腾讯地图
-    2020-06-04
-
-1.5.0
-
-    支持百度地图
-    2020-05-25
-
-
-# 6. 可发布博文
-
-- Bing 地图居中显示定位点，拖拽始终居中
-- Bing 自定义瓦片地图
